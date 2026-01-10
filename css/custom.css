@@ -779,6 +779,9 @@ header.main-header .header-sticky.active {
 	background: var(--primary-color);
 	position: relative;
 }
+.about-2{
+	flex-direction: row-reverse;
+}
 
 .home-about::before,
 .gallery-page::before,
@@ -803,16 +806,34 @@ header.main-header .header-sticky.active {
 .home-about-left {
 	position: relative;
 }
-
+.home-about-left-2{
+	display: flex;
+	justify-content: center;
+}
 .home-about-left .home-about-img {
 	display: inline-flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
+.home-about-left-2 .home-about-img {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+.about-2-div{
+	display: flex;
+	align-items: center;
+justify-content: center;
+}
 
 .home-about-left .home-about-img figure {
 	width: 48%;
+}
+.home-about-left-2 .home-about-img figure {
+	width: 60%;
 }
 
 .home-about-left .home-about-img figure img {
@@ -1615,7 +1636,9 @@ header.main-header .header-sticky.active {
 	position: relative;
 	z-index: 1;
 }
-
+.footer-row{
+	justify-content: space-between;
+}
 .footer-about {
 	padding-right: 100px;
 }
